@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamelet</title>
+    <style>
+      #container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      #ballbag {
+        width: 500px;
+        height: 500px;
+        border: 5px solid grey;
+        background: #efefef;
+      }
+      #ball {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: red;
+        position: relative;
+        animation: colour 4s infinite;
+      }
+      button {
+        width: 32%;
+        font-weight: 700;
+        display: inline-block;
+        margin-top: 10px;
+        border: 2px solid black;
+        padding: 15px;
+      }
+      @keyframes colour {
+        0% {
+          background: blue;
+        }
+        20% {
+          background: purple;
+        }
+        40% {
+          background: red;
+        }
+        60% {
+          background: orange;
+        }
+        80% {
+          background: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="ballbag">
+        <div id="ball"></div>
+      </div>
+      <button id="reset">Reset Ball</button>
+      <button id="scale-up">Increase Size</button>
+      <button id="scale-down">Decrease Size</button>
+    </div>
+    <script src="gamelet.js"></script>
+  </body>
+</html>
