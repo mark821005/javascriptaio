@@ -1,5 +1,3 @@
-# Moving Ball Thing
+# Javascript Learning
 
-Use the arrows and buttons
-
-## Its really that easy
+Playground for exercises and examples
