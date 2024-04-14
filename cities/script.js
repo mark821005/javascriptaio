@@ -15,5 +15,3 @@ function randomise() {
   let city = cities[random];
   result.innerHTML = city;
 }
-
-Hello Aline
