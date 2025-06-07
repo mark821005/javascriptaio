@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<script>
-    let normalName = 'Mark';
-    let jsName = normalName + ' Script';
-    console.log(jsName);
-</script>    
-</body>
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+    <p>Test paragraph text is here.</p>
+    <form id="superheroForm" onsubmit="handleForm(event)">
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name" required />
+      <button type="submit">Get Superhero Name</button>
+    </form>
+    <p id="result"></p>
+    <br />
+    <h2>Numbers - string/number conversion</h2>
+    <div id="numberResult"></div>
+    <br />
+    <h2>Personal Details (Object - Complex data type). Dot Notation.</h2>
+    <p id="deets"></p>
+    <br />
+    <h2>Basic Array</h2>
+    <p>
+      Eg favourite cities. Access elements in array using its index
+      (zero-based). Eg arrayName[2] gets the third value.
+    </p>
+    <p>
+      Here Im getting the number of items in the array and randomising it before
+      returning the value.
+    </p>
+    <p id="arrayindex"></p>
+    <script src="script.js"></script>
+  </body>
 </html>
