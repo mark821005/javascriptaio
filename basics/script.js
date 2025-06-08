@@ -72,3 +72,16 @@ const favouriteCities = [
 const index = document.getElementById("arrayindex");
 randIndex = Math.floor(Math.random() * favouriteCities.length);
 index.textContent = favouriteCities[randIndex];
+
+const fruitColour = {
+  colour: ["red", "blue", "orange", "purple", "yellow", "green"],
+  fruit: ["apple", "banana", "orange", "kiwi", "tomato", "pear"],
+  shop: { name: "Tesco", type: "Extra" },
+};
+let fruitCol = document.getElementById("colour");
+let fruitType = document.getElementById("fruit");
+randColour = Math.floor(Math.random() * fruitColour.colour.length);
+randFruit = Math.floor(Math.random() * fruitColour.fruit.length);
+fruitCol.textContent = fruitColour.colour[randColour];
+fruitType.textContent =
+  fruitColour.fruit[randFruit] + " From " + fruitColour.shop.name;
