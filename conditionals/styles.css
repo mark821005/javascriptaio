@@ -1,0 +1,6 @@
+body {
+  transition: all 1s ease-in-out;
+}
+body.toggled {
+  background-color: yellowgreen;
+}

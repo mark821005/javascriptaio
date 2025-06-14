@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="body">
+    <form id="form" onsubmit="handleForm(event)">
+      <fieldset>
+        <label for="bgToggle">Toggle Background</label>
+        <input type="checkbox" name="bgToggle" id="toggle" />
+        <button type="submit">Apply</button>
+      </fieldset>
+    </form>
+    <h2>If / Or statement with Else statement</h2>
+    <p>
+      Display the current day and message based on whether the day is saturday
+      or sunday, or a weekday:
+    </p>
+    <p><strong id="dayMessage"></strong></p>
+    <h2>Ternary Operator</h2>
+    <p id="isSat"></p>
+    <h2>Basic Switch Statement</h2>
+    <p id="switchDay">Test</p>
+    <script src="script.js"></script>
+  </body>
+</html>
